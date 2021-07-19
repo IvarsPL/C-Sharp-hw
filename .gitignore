@@ -348,3 +348,22 @@ MigrationBackup/
 
 # Ionide (cross platform F# VS Code tools) working folder
 .ionide/
+
+# double check from syllabus :
+/Basics/.vs/*
+/*/*/obj/*
+/*/*/bin/*
+.idea
+/csharp-basics/*/*/.vs/*
+/csharp-basics/exercises/*/*/obj/*
+/csharp-basics/exercises/*/*/bin/*
+/.vs/*
+*.cache
+*/**/obj/*
+*/**/bin/*
+
+/**/.vs/*
+/**/packages/*
+*.config
+*.dll
+*.config
