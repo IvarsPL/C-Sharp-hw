@@ -15,7 +15,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exercise5", "Exercise5\Exer
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TicTacToe", "TicTacToe\TicTacToe.csproj", "{F0A071BC-6F7E-4D2A-B972-0B430ACD6181}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exercise 6", "Exercise 6\Exercise 6.csproj", "{4EBAA724-9EE4-4DE2-8600-A1DD4B11FE8E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Exercise 6", "Exercise 6\Exercise 6.csproj", "{4EBAA724-9EE4-4DE2-8600-A1DD4B11FE8E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
