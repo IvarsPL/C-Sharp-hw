@@ -8,7 +8,6 @@ namespace PrintDayInWord
         {
             Console.WriteLine("Please enter day number:");
             var dayNumber = Int32.Parse(Console.ReadLine() ?? throw new InvalidOperationException());
-
             
             switch (dayNumber)
             {
