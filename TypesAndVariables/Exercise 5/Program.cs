@@ -13,7 +13,7 @@ namespace Exercise_5
             string[] courses = {"English III", "Precalculus", "Music Theory", "Biotechnology", "Principles of Technology I", "Latin II", "AP US History", "Business Computer Information Systems"};
             string[] teachers = { "Ms. Lapan", "Mrs. Gideon", "Mr. Davis", "Ms. Palmer", "Ms. Garcia", "Mrs. Barnett", "Ms. Johannessen", "Mr. James"};
 
-          Console.WriteLine("+------------------------------------------------------------+");
+            Console.WriteLine("+------------------------------------------------------------+");
             for (int i = 0; i < courses.Length; i++)
             {
                 Console.Write($"| {i+1} |");
