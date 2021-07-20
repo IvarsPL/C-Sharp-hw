@@ -13,9 +13,14 @@ namespace Exercise_8
             double extraPayRate = 1.5;
             double salary;
 
-            if (pay < basePay) Console.WriteLine("Please double check the base pay.");
-            else if (hours > baseHour) Console.WriteLine("You can't work that much.");
-
+            if (pay < basePay) 
+            {
+                Console.WriteLine("Please double check the base pay.");
+            }
+            else if (hours > baseHour)
+            {
+                Console.WriteLine("You can't work that much.");
+            }
             else if (hours > normalHours)
             {
                 int extraHours = hours - normalHours;
