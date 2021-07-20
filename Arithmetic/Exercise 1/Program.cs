@@ -11,10 +11,13 @@ namespace Exercise_1
             Console.WriteLine("Please enter second digit:");
             var secondDigit = int.Parse(Console.ReadLine() ?? throw new InvalidOperationException());
 
-            if (firstDigit + secondDigit == 15) Console.WriteLine("True");
-            else if (firstDigit - secondDigit == 15 || secondDigit - firstDigit == 15) Console.WriteLine("True");
-            else if (firstDigit == 15) Console.WriteLine("True");
-            else if (secondDigit == 15) Console.WriteLine("True");
+            if (
+                firstDigit + secondDigit == 15 ||
+                firstDigit - secondDigit == 15 || 
+                secondDigit - firstDigit == 15 || 
+                firstDigit == 15 || 
+                secondDigit == 15 
+                ) Console.WriteLine("True");
             else Console.WriteLine("False");
         }
     }
