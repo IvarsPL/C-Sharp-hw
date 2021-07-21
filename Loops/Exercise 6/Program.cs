@@ -15,7 +15,7 @@ namespace Exercise_6
                 if (i % 15 == 0) Console.Write("FizzBuzz ");
                 else if (i % 5 == 0) Console.Write("Buzz ");
                 else if (i % 3 == 0) Console.Write("Fizz ");
-                else {Console.Write($"{i} ");}
+                else { Console.Write($"{i} "); }
             }
 
             Console.ReadKey();
