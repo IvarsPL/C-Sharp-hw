@@ -6,63 +6,35 @@ namespace Exercise_8
     {
         static void Main(string[] args)
         {
-            var slashCounter = 32;
-            var starCounter = 0;
-            var changeSize = 8;
-            const int figureSize = 3;
+            const int figureSize = 5;
+            var figuresPerOneRowAdded = 8;
+            var howManyFigures = 0;
+            var firstFigure = '/';
+            var secondFigure = (char)92;
+            var starFigure = '*';
 
-
-            for (int i = 0; i < 5; i++)
+            for (int i = 1; i < figureSize; i++)
             {
-                if (starCounter == 0) // 1 iteracija
+                howManyFigures += figuresPerOneRowAdded;
+            }
+
+            var starCounter = 0;
+
+            for (int i = 0; i < figureSize; i++)
+            {
+                var secondFigureCount = (starCounter + howManyFigures) / 2;
+                var firstFigureCount = (howManyFigures - starCounter) / 2;
+
+                for (int j = 0; j < howManyFigures; j++)
                 {
-                    for (int j = 0; j < slashCounter; j++) 
-                    {
-                        if (j <= 15) Console.Write('/');
-                        else Console.Write((char) 92);
-                    }
-                }
-                else if (starCounter == 8) // 2 iteracija
-                {
-                    for (int j = 0; j < slashCounter + starCounter; j++)
-                    {
-                        if (j < slashCounter / 2) Console.Write('/');
-                        else if (j >= starCounter + (slashCounter/2)) Console.Write((char)92);
-                        else Console.Write("*");
-                    }
-                }
-                else if (starCounter == 16) // 3 iteracija
-                {
-                    for (int j = 0; j < slashCounter + starCounter; j++)
-                    {
-                        if (j < slashCounter / 2) Console.Write('/');
-                        else if (j >= starCounter + (slashCounter / 2)) Console.Write((char)92);
-                        else Console.Write("*");
-                    }
-                }
-                else if (starCounter == 24) //4 iteracija
-                {
-                    for (int j = 0; j < slashCounter + starCounter; j++)
-                    {
-                        if (j < slashCounter / 2) Console.Write('/');
-                        else if (j >= starCounter + (slashCounter / 2)) Console.Write((char)92);
-                        else Console.Write("*");
-                    }
+                    if (j < firstFigureCount) Console.Write(firstFigure);
+                    else if (j >= secondFigureCount) Console.Write(secondFigure);
+                    else Console.Write(starFigure);
                 }
 
-                else
-                {
-                    for (int j = 0; j < starCounter; j++)
-                    {
-                        Console.Write("*");
-                    }
-                }
-
-                starCounter += changeSize;
-                slashCounter -= changeSize;
+                starCounter += figuresPerOneRowAdded;
                 Console.WriteLine();
             }
-            
 
             Console.ReadKey();
         }
