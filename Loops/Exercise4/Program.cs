@@ -1,4 +1,7 @@
-﻿namespace Exercise4
+﻿using System;
+using System.CodeDom;
+
+namespace Exercise4
 {
     class Program
     {
@@ -7,21 +10,17 @@
         {
             char[] vowels = {'a', 'e', 'i', 'o', 'u'};
 
-            /*
-            todo - use for
-            for (?) 
+            for (var i = 0; i < vowels.Length; i++)
             {
                 Console.WriteLine(vowels[i]);
             }
-            */
 
-            /*
-            todo - use foreach
-            for (?) 
+            foreach (var vowel in vowels)
             {
-                Console.WriteLine(vowel);
+             Console.WriteLine(vowel);
             }
-            */
+
+            Console.ReadKey();
         }
     }
 }
