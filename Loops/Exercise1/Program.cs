@@ -2,18 +2,13 @@
 
 namespace Exercise1
 {
-    class Program
+    internal class Program
     {
-        static void Main(string[] args)
+        private static void Main(string[] args)
         {
-            int i = 1;
-
             Console.WriteLine("The first 10 natural numbers are: ");
 
-            for (i = 1; i <= 10; i++) 
-            {
-              Console.WriteLine(i);
-            }
+            for (var i = 1; i <= 10; i++) Console.WriteLine(i);
 
             Console.ReadKey();
         }
