@@ -12,7 +12,7 @@
 
         public void Fill()
         {
-            if(_fuelLevel < 70)
+            if (_fuelLevel < 70)
                 _fuelLevel++;
         }
 

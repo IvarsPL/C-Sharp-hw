@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections;
 
 namespace ConsoleApp1
 {
@@ -23,6 +22,6 @@ namespace ConsoleApp1
                 Console.WriteLine($"odometer report:{odometer.Report()} fuel report: {fuelGauge.ReportLevel()}");
             }
             Console.ReadKey();
-        }        
+        }
     }
 }

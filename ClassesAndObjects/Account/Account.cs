@@ -7,7 +7,7 @@
 
         public Account(string v1, double v2)
         {
-            
+
         }
 
         public double withdrawal(double i)
@@ -17,7 +17,7 @@
 
         public void deposit(double i)
         {
-            
+
         }
 
         public double balance()

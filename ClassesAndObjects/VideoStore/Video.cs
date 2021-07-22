@@ -1,27 +1,25 @@
-﻿using System.Collections.Generic;
-
-namespace VideoStore
+﻿namespace VideoStore
 {
     class Video
     {
         public Video(string title)
         {
-            
+
         }
 
         public void BeingCheckedOut()
         {
-            
+
         }
 
         public void BeingReturned()
         {
-            
+
         }
 
         public void ReceivingRating(double rating)
         {
-            
+
         }
 
         public double AverageRating()

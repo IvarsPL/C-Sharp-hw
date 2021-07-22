@@ -1,21 +1,18 @@
-﻿using System;
-using System.Collections.Generic;
-
-namespace VideoStore
+﻿namespace VideoStore
 {
     class VideoStore
     {
 
         public VideoStore()
         {
-            
+
         }
 
         public void AddVideo(string title)
         {
-            
+
         }
-        
+
         public void Checkout(string title)
         {
 
@@ -27,12 +24,12 @@ namespace VideoStore
 
         public void TakeUsersRating(double rating, string title)
         {
-            
+
         }
 
         public void ListInventory()
         {
-            
+
         }
     }
 }
