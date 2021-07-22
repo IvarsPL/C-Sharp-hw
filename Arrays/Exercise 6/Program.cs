@@ -7,8 +7,8 @@ namespace Exercise_6
     {
         static void Main(string[] args)
         {
-            int Min = 1;
-            int Max = 100;
+            int min = 1;
+            int max = 100;
             Random randNum = new Random();
             int[] firstArray = Enumerable
                 .Repeat(0, 10)
