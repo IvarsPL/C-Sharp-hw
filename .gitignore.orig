@@ -364,5 +364,9 @@ MigrationBackup/
 
 /**/.vs/*
 /**/packages/*
+<<<<<<< HEAD
+*.config
 *.dll
 *.config
+=======
+>>>>>>> b0c90de71a85f17f2bbba257119477eaba1a0cf6
