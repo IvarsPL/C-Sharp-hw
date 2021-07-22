@@ -72,43 +72,14 @@ namespace TicTacToe
         private static bool WinningCondition(char player)
         {
             var winningText = $"Player {player} wins";
-            if (board[0, 0] == player && board[1, 1] == player && board[2, 2] == player)
-            {
-                Console.WriteLine(winningText);
-                return true;
-            }
-
-            if (board[2, 0] == player && board[1, 1] == player && board[0, 2] == player)
-            {
-                Console.WriteLine(winningText);
-                return true;
-            }
-            if (board[0, 0] == player && board[0, 1] == player && board[0, 2] == player)
-            {
-                Console.WriteLine(winningText);
-                return true;
-            }
-            if (board[1, 0] == player && board[1, 1] == player && board[1, 2] == player)
-            {
-                Console.WriteLine(winningText);
-                return true;
-            }
-            if (board[2, 0] == player && board[2, 1] == player && board[2, 2] == player)
-            {
-                Console.WriteLine(winningText);
-                return true;
-            }
-            if (board[0, 0] == player && board[1, 0] == player && board[2, 0] == player)
-            {
-                Console.WriteLine(winningText);
-                return true;
-            }
-            if (board[0, 1] == player && board[1, 1] == player && board[2, 1] == player)
-            {
-                Console.WriteLine(winningText);
-                return true;
-            }
-            if (board[0, 2] == player && board[1, 2] == player && board[2, 2] == player)
+            if ( (board[0, 0] == player && board[1, 1] == player && board[2, 2] == player) ||
+                 (board[2, 0] == player && board[1, 1] == player && board[0, 2] == player) ||
+                 (board[0, 0] == player && board[0, 1] == player && board[0, 2] == player) ||
+                 (board[1, 0] == player && board[1, 1] == player && board[1, 2] == player) ||
+                 (board[2, 0] == player && board[2, 1] == player && board[2, 2] == player) ||
+                 (board[0, 0] == player && board[1, 0] == player && board[2, 0] == player) ||
+                 (board[0, 1] == player && board[1, 1] == player && board[2, 1] == player) ||
+                 (board[0, 2] == player && board[1, 2] == player && board[2, 2] == player))
             {
                 Console.WriteLine(winningText);
                 return true;
