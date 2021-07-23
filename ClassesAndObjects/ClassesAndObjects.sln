@@ -15,7 +15,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VideoStore", "VideoStore\Vi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exercise3", "ConsoleApp1\Exercise3.csproj", "{0B739CC0-A8F3-4FA2-AFB9-4592141DEF9E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exercise1", "Exercise1\Exercise1.csproj", "{01292811-90B2-423E-BF01-0AD44F3E3515}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Exercise1", "Exercise1\Exercise1.csproj", "{01292811-90B2-423E-BF01-0AD44F3E3515}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exercise 4", "Exercise 4\Exercise 4.csproj", "{FEF13EEC-FF82-43EE-B9F5-B9793F46D550}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,6 +53,10 @@ Global
 		{01292811-90B2-423E-BF01-0AD44F3E3515}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{01292811-90B2-423E-BF01-0AD44F3E3515}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{01292811-90B2-423E-BF01-0AD44F3E3515}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FEF13EEC-FF82-43EE-B9F5-B9793F46D550}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FEF13EEC-FF82-43EE-B9F5-B9793F46D550}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FEF13EEC-FF82-43EE-B9F5-B9793F46D550}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FEF13EEC-FF82-43EE-B9F5-B9793F46D550}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
