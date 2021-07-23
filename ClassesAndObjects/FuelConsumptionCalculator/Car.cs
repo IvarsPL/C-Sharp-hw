@@ -2,18 +2,22 @@
 {
     public class Car
     {
-        public Car(double startOdo)
+        public int StartOdo;
+        public int StartKilometers;
+        public double Liters;
+        public Car(int startOdo)
         {
+            this.StartOdo = startOdo;
         }
 
         public double CalculateConsumption()
         {
-            return 0;
+            return (StartOdo - StartKilometers) / Liters;
         }
 
         private double ConsumptionPer100Km()
         {
-            return 0;
+            return CalculateConsumption() / 100;
         }
 
         public bool GasHog()

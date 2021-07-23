@@ -13,16 +13,16 @@ namespace FuelConsumptionCalculator
             for (int i = 0; i < 3; i++)
             {
                 Console.Write("Enter first reading: ");
-                var startKilometers = Convert.ToInt32(Console.ReadLine());
+                car.StartKilometers = Convert.ToInt32(Console.ReadLine());
                 Console.Write("Enter liters reading: ");
-                var liters = Convert.ToInt32(Console.ReadLine());
-                car.FillUp(startKilometers, liters);
+                car.Liters = Convert.ToInt32(Console.ReadLine());
+                car.FillUp(car.StartKilometers, car.Liters);
 
                 Console.Write("Enter first reading: ");
-                startKilometers = Convert.ToInt32(Console.ReadLine());
+                car1.StartKilometers = Convert.ToInt32(Console.ReadLine());
                 Console.Write("Enter liters reading: ");
-                liters = Convert.ToInt32(Console.ReadLine());
-                car1.FillUp(startKilometers, liters);
+                car1.Liters = Convert.ToInt32(Console.ReadLine());
+                car1.FillUp(car1.StartKilometers, car1.Liters);
             }
 
             Console.WriteLine("Kilometers per liter are " + car.CalculateConsumption() + " gasHog:" + car.GasHog());
