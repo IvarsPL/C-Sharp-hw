@@ -24,7 +24,7 @@ namespace Exercise_4
             _rating = "PG";
         }
 
-        public Movie[] GetPG(Movie[] movies)
+        public Movie[] GetPg(Movie[] movies)
         {
             List<Movie> newMovies = new List<Movie>();
             for (var i = 0; i < movies.Length; i++)

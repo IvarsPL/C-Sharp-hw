@@ -5,7 +5,7 @@ namespace VideoStore
     class Program
     {
         private const int _countOfMovies = 3;
-        private static VideoStore _videoStore = new VideoStore();
+        private static readonly VideoStore VideoStore = new VideoStore();
         private static void Main(string[] args)
         {
             while (true)
@@ -43,7 +43,7 @@ namespace VideoStore
 
         private static void ListInventory()
         {
-            _videoStore.ListInventory();
+            VideoStore.ListInventory();
         }
 
         private static void FillVideoStore()
@@ -56,8 +56,8 @@ namespace VideoStore
                 Console.WriteLine("Enter rating");
                 int rating = Convert.ToInt16(Console.ReadLine());
 
-                _videoStore.AddVideo(movieName);
-                _videoStore.TakeUsersRating(rating, movieName);
+                VideoStore.AddVideo(movieName);
+                VideoStore.TakeUsersRating(rating, movieName);
             }
         }
 
@@ -65,14 +65,14 @@ namespace VideoStore
         {
             Console.WriteLine("Enter movie name");
             string movieName = Console.ReadLine();
-            _videoStore.Checkout(movieName);
+            VideoStore.Checkout(movieName);
         }
 
         private static void ReturnVideo()
         {
             Console.WriteLine("Enter movie name");
             string movieName = Console.ReadLine();
-            _videoStore.ReturnVideo(movieName);
+            VideoStore.ReturnVideo(movieName);
         }
     }
 }
