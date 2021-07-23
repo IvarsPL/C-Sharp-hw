@@ -18,7 +18,7 @@ namespace ConsoleApp1
             Console.WriteLine("running...");
             for (int i = 0; i < 200; i++)
             {
-                odometer.Increment();
+                odometer.Increment(); 
                 Console.WriteLine($"odometer report:{odometer.Report()} fuel report: {fuelGauge.ReportLevel()}");
             }
             Console.ReadKey();
