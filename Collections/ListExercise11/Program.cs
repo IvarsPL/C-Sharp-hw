@@ -1,8 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace ListExercise11
 {
@@ -11,18 +8,26 @@ namespace ListExercise11
         static void Main(string[] args)
         {
             //TODO: Create an List with string elements
+            var randomList = new List<string>()
+            {
+                "Baby Yoda",
+                "Baby Groot"
+            };
 
-            //TODO: Add 10 values to list
+            randomList.AddRange(new string[] {
+                "IronMan", "Thor", "Loki", "Strange", "Hulk", "Wanda", "Vision", "Spider-man", "Hawk-eye", "Black Panther"});
 
-            //TODO: Add new value at 5th position
+            randomList.Insert(4, "Black Widow");
 
-            //TODO: Change value at last position (Calculate last position programmatically)
+            randomList[randomList.Count-1] = "Odin";
 
-            //TODO: Sort your list in alphabetical order
+            randomList.Sort();
 
-            //TODO: Check if your list contains "Foobar" element
+            randomList.Contains("Foobar");
 
-            //TODO: Print each element of list using loop
+            foreach (var hero in randomList) { Console.WriteLine(hero);}
+
+            Console.Read();
         }
     }
 }

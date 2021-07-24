@@ -7,13 +7,18 @@ namespace ListExercise1
     {
         private static void Main(string[] args)
         {
-            //TODO: Write a C# program to create a new list, add some elements (string) and print out the collection.
-            var colors = new List<string>();
+            var colors = new List<string>() { "1", "2", "3", "4", "5" };
+            foreach (var element in colors) { Console.WriteLine(element); }
 
-            //TODO: Add 5 colors to list
             colors.Add("Red");
+            colors.Add("Cyan");
+            colors.Add("Purple");
+            colors.Add("Blue");
+            colors.Add("Green");
 
-            Console.WriteLine();
+            foreach (var element in colors) { Console.WriteLine(element); }
+
+            Console.Read();
         }
     }
 }
