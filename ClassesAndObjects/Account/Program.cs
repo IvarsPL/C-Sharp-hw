@@ -13,7 +13,7 @@ namespace Account
             Console.WriteLine(aAccount);
             Console.WriteLine(bAccount);
             Console.WriteLine(cAccount);
-            aAccount.Name = "GGGG";
+            
             Transfer(aAccount, bAccount, 50.0);
             Transfer(bAccount, cAccount, 25.0);
 
@@ -27,7 +27,7 @@ namespace Account
 
         public static void Transfer(Account from, Account to, double howMuch)
         {
-            to.deposit(from.withdrawal(howMuch));
+            to.Deposit(from.Withdrawal(howMuch));
         }
     }
 }
