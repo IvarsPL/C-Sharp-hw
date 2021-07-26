@@ -1,9 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.IO;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace WordCount
 {
@@ -11,13 +8,13 @@ namespace WordCount
     {
         static void Main(string[] args)
         {
-            string text = File.ReadAllText(@"C:\Users\Better\source\repos\C-Sharp-hw\Collections\WordCount\lear.txt");     
+            string text = File.ReadAllText(@"C:\Users\Better\source\repos\C-Sharp-hw\Collections\WordCount\lear.txt");
             Console.WriteLine(text);
             var wordCount = 0;
             int charCount = 0;
             int index = 0;
             var lineCount = File.ReadLines(@"C:\Users\Better\source\repos\C-Sharp-hw\Collections\WordCount\lear.txt").Count();
-            
+
             foreach (var c in text)
             {
                 charCount++;

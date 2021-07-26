@@ -28,7 +28,7 @@ namespace ListExercise9
             };
 
             Console.WriteLine(string.Join(",", secondList));
-            
+
             firstList.AddRange(secondList);
 
             Console.WriteLine(string.Join(",", firstList));

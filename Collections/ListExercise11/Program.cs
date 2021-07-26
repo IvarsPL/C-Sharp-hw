@@ -19,13 +19,13 @@ namespace ListExercise11
 
             randomList.Insert(4, "Black Widow");
 
-            randomList[randomList.Count-1] = "Odin";
+            randomList[randomList.Count - 1] = "Odin";
 
             randomList.Sort();
 
             randomList.Contains("Foobar");
 
-            foreach (var hero in randomList) { Console.WriteLine(hero);}
+            foreach (var hero in randomList) { Console.WriteLine(hero); }
 
             Console.Read();
         }

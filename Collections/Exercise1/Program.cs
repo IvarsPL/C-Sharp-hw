@@ -24,7 +24,7 @@ namespace Exercise1
             dictionary.Add("Mercedes", "Germany");
             dictionary.Add("Volkswagen", "Germany");
             dictionary.Add("Tesla", "USA");
-            
+
             foreach (var car in dictionary) { Console.WriteLine(car); }
 
             Console.Read();
