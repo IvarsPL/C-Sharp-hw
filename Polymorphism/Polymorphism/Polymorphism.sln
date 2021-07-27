@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31424.327
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Polymorphism", "Polymorphism.csproj", "{3E506147-7E3B-4ACF-8C4F-4B8460E3C59F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DragRace", "..\DragRace\DragRace.csproj", "{90B644C7-1E28-4296-9760-BA5230155D91}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MakeSounds", "MakeSounds\MakeSounds.csproj", "{1EC84BF6-1E92-497A-B678-0EA34BC42668}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3E506147-7E3B-4ACF-8C4F-4B8460E3C59F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3E506147-7E3B-4ACF-8C4F-4B8460E3C59F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3E506147-7E3B-4ACF-8C4F-4B8460E3C59F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3E506147-7E3B-4ACF-8C4F-4B8460E3C59F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{90B644C7-1E28-4296-9760-BA5230155D91}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{90B644C7-1E28-4296-9760-BA5230155D91}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{90B644C7-1E28-4296-9760-BA5230155D91}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{90B644C7-1E28-4296-9760-BA5230155D91}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1EC84BF6-1E92-497A-B678-0EA34BC42668}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1EC84BF6-1E92-497A-B678-0EA34BC42668}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1EC84BF6-1E92-497A-B678-0EA34BC42668}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1EC84BF6-1E92-497A-B678-0EA34BC42668}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E496F0A9-B193-48B6-AA2F-39B55E2E2B36}
+	EndGlobalSection
+EndGlobal
