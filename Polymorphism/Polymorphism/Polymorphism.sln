@@ -9,6 +9,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DragRace", "..\DragRace\Dra
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MakeSounds", "MakeSounds\MakeSounds.csproj", "{1EC84BF6-1E92-497A-B678-0EA34BC42668}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Persons", "Persons\Persons.csproj", "{C8565539-661F-4FF2-B4C0-17D390F78C5F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{1EC84BF6-1E92-497A-B678-0EA34BC42668}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1EC84BF6-1E92-497A-B678-0EA34BC42668}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1EC84BF6-1E92-497A-B678-0EA34BC42668}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C8565539-661F-4FF2-B4C0-17D390F78C5F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C8565539-661F-4FF2-B4C0-17D390F78C5F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C8565539-661F-4FF2-B4C0-17D390F78C5F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C8565539-661F-4FF2-B4C0-17D390F78C5F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
