@@ -11,6 +11,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MakeSounds", "MakeSounds\Ma
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Persons", "Persons\Persons.csproj", "{C8565539-661F-4FF2-B4C0-17D390F78C5F}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Firm", "Firm\Firm.csproj", "{C00BA1FD-5B73-4EAD-BBE8-0553CA96098D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{C8565539-661F-4FF2-B4C0-17D390F78C5F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C8565539-661F-4FF2-B4C0-17D390F78C5F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C8565539-661F-4FF2-B4C0-17D390F78C5F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C00BA1FD-5B73-4EAD-BBE8-0553CA96098D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C00BA1FD-5B73-4EAD-BBE8-0553CA96098D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C00BA1FD-5B73-4EAD-BBE8-0553CA96098D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C00BA1FD-5B73-4EAD-BBE8-0553CA96098D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
