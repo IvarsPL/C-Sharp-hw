@@ -17,13 +17,10 @@ namespace ListExercise11
                 "IronMan", "Thor", "Loki", "Strange", "Hulk", "Wanda", "Vision", "Spider-man", "Hawk-eye", "Black Panther"});
 
             randomList.Insert(4, "Black Widow");
-
             randomList[randomList.Count - 1] = "Odin";
-
             randomList.Sort();
-
             randomList.Contains("Foobar");
-
+            
             foreach (var hero in randomList) { Console.WriteLine(hero); }
 
             Console.Read();
