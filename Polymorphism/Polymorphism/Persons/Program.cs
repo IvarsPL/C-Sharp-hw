@@ -6,7 +6,7 @@ namespace Persons
     {
         static void Main(string[] args)
         {
-           var student = new Students(gpa: 4.5)
+            var student = new Students(gpa: 4.5)
             {
                 FirstName = "Ivars",
                 LastName = "Plaudis - Lasmanis",

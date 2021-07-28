@@ -1,5 +1,3 @@
-using System;
-
 namespace Firm
 {
     public class Employee : StaffMember
@@ -21,12 +19,12 @@ namespace Firm
         //-----------------------------------------------------------------
         // Returns information about an employee as a string.
         //-----------------------------------------------------------------
-         public override string ToString() 
+        public override string ToString()
         {
-             var result = base.ToString();
-             result += "\nSocial Security Number: " + socialSecurityNumber;
-             return result;
-         }
+            var result = base.ToString();
+            result += "\nSocial Security Number: " + socialSecurityNumber;
+            return result;
+        }
 
         //-----------------------------------------------------------------
         // Returns the pay rate for this employee.

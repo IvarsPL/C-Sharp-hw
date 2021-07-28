@@ -8,12 +8,12 @@ namespace AdApp
     {
         private List<Advert> _campaign;
 
-        public Campaign() 
+        public Campaign()
         {
             _campaign = new List<Advert>();
         }
 
-        public void AddAdvert(Advert a) 
+        public void AddAdvert(Advert a)
         {
             _campaign.Add(a);
         }
@@ -25,7 +25,7 @@ namespace AdApp
 
         public override string ToString()
         {
-            return "Advert Campaign" + _campaign + "\nTotal Cost = "+ GetCost();
+            return "Advert Campaign" + _campaign + "\nTotal Cost = " + GetCost();
         }
 
         public IEnumerator GetEnumerator()

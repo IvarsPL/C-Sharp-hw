@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace Firm
+﻿namespace Firm
 {
     public class Commission : Hourly
     {
@@ -24,8 +20,8 @@ namespace Firm
         {
             var payment = base.Pay() + (_commissionPercent * _totalSales);
             _commissionPercent = 0;
-            return payment ;
-            
+            return payment;
+
         }
 
         public override string ToString()

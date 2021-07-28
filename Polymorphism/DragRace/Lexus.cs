@@ -11,27 +11,27 @@ namespace DragRace
             Name = "Lexus";
         }
 
-        public void SpeedUp() 
+        public void SpeedUp()
         {
             currentSpeed++;
         }
 
-        public void SlowDown() 
+        public void SlowDown()
         {
             currentSpeed--;
         }
 
-        public string ShowCurrentSpeed() 
+        public string ShowCurrentSpeed()
         {
             return currentSpeed.ToString();
         }
 
-        public void UseNitrousOxideEngine() 
+        public void UseNitrousOxideEngine()
         {
             currentSpeed += 5;
         }
 
-        public void StartEngine() 
+        public void StartEngine()
         {
             Console.WriteLine("Rrrrrrr.....");
         }

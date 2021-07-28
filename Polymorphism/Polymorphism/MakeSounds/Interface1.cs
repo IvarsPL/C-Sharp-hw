@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace MakeSounds
+﻿namespace MakeSounds
 {
     interface Interface1
     {

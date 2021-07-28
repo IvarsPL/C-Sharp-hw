@@ -1,6 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace Persons
 {
@@ -16,11 +14,11 @@ namespace Persons
         }
         public override void Display()
         {
-           Console.WriteLine(FirstName);
-           Console.WriteLine(LastName);
-           Console.WriteLine(Address);
-           Console.WriteLine(Id);
-           Console.WriteLine(_jobTitle);
+            Console.WriteLine(FirstName);
+            Console.WriteLine(LastName);
+            Console.WriteLine(Address);
+            Console.WriteLine(Id);
+            Console.WriteLine(_jobTitle);
         }
     }
 }

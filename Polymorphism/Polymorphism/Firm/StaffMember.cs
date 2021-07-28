@@ -9,7 +9,7 @@ namespace Firm
         //-----------------------------------------------------------------
         // Sets up a staff member using the specified information.
         //-----------------------------------------------------------------
-        protected StaffMember(string eName, string eAddress, string ePhone) 
+        protected StaffMember(string eName, string eAddress, string ePhone)
         {
             name = eName;
             address = eAddress;
@@ -19,7 +19,7 @@ namespace Firm
         //-----------------------------------------------------------------
         // Returns a string including the basic employee information.
         //-----------------------------------------------------------------
-        public override string ToString() 
+        public override string ToString()
         {
             var result = "Name: " + name + "\n";
             result += "Address: " + address + "\n";

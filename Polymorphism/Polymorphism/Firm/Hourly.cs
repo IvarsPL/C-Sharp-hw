@@ -24,7 +24,8 @@ namespace Firm
         //-----------------------------------------------------------------
         // Computes and returns the pay for this hourly employee.
         //-----------------------------------------------------------------
-        public override double Pay() {
+        public override double Pay()
+        {
 
             var payment = payRate * _hoursWorked;
             _hoursWorked = 0;
@@ -34,7 +35,7 @@ namespace Firm
         //-----------------------------------------------------------------
         // Returns information about this hourly employee as a string.
         //-----------------------------------------------------------------
-        public override string ToString() 
+        public override string ToString()
         {
             var result = base.ToString();
             result += "\nCurrent hours: " + _hoursWorked;

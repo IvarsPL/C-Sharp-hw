@@ -1,6 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace Persons
 {
@@ -14,7 +12,7 @@ namespace Persons
         {
             _gpa = gpa;
         }
-        
+
         public override void Display()
         {
             Console.WriteLine(this.FirstName);
