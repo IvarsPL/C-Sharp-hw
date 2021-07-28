@@ -7,7 +7,6 @@ namespace ListExercise11
     {
         static void Main(string[] args)
         {
-            //TODO: Create an List with string elements
             var randomList = new List<string>()
             {
                 "Baby Yoda",
