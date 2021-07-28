@@ -1,8 +1,8 @@
 namespace AdApp
 {
-    public class TVAd: Advert
+    public class TvAd: Advert
     {
-        public TVAd(int fee) : base(fee)
+        public TvAd(int fee) : base(fee)
         {
         }
         
