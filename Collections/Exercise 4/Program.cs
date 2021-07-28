@@ -24,22 +24,14 @@ namespace Exercise_4
                         int newNumT = (int)Math.Pow(newNum, 2);
                         intList.Insert(0, newNumT);
                     }
-
                     if (inputInt == 0) inputInt = intList.Sum();
                 }
-
-
             } while (inputInt > 10);
 
             Console.WriteLine(inputInt == 1 ? "Your number is happy" : "Your number is not happy");
 
-
             Console.WriteLine(inputInt);
             Console.ReadKey();
-
-
-
-
         }
     }
 }
