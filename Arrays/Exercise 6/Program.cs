@@ -3,7 +3,7 @@ using System.Linq;
 
 namespace Exercise_6
 {
-    class Program
+    public class Program
     {
         static void Main(string[] args)
         {
@@ -12,7 +12,7 @@ namespace Exercise_6
             Random randNum = new Random();
             int[] firstArray = Enumerable
                 .Repeat(0, 10)
-                .Select(i => randNum.Next(Min, Max))
+                .Select(i => randNum.Next(min, max))
                 .ToArray();
 
             int[] secondArray = new int[firstArray.Length];
