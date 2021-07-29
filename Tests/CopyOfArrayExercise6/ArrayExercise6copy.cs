@@ -3,7 +3,7 @@ using System.Linq;
 
 namespace CopyOfArrayExercise6
 {
-    public static class ArrayExercise6Copy
+    public class ArrayExercise6Copy
     {
         public static int Min = 1;
         public static int Max = 100;
