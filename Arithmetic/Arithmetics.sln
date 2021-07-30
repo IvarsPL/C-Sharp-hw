@@ -33,6 +33,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exercise 6.Test", "Exercise
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GravityCalculator.test", "GravityCalculator.test\GravityCalculator.test.csproj", "{84523540-CA6F-4995-B511-852977A59EFE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exercise 8.Test", "Exercise8.Test\Exercise 8.Test.csproj", "{7D97726D-C419-4835-BD36-427E884221F6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -99,6 +101,10 @@ Global
 		{84523540-CA6F-4995-B511-852977A59EFE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{84523540-CA6F-4995-B511-852977A59EFE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{84523540-CA6F-4995-B511-852977A59EFE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7D97726D-C419-4835-BD36-427E884221F6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7D97726D-C419-4835-BD36-427E884221F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7D97726D-C419-4835-BD36-427E884221F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7D97726D-C419-4835-BD36-427E884221F6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

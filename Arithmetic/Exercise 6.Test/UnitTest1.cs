@@ -1,4 +1,3 @@
-using System.Globalization;
 using NUnit.Framework;
 
 namespace Exercise_6.Test

@@ -2,10 +2,9 @@
 
 namespace Exercise_8
 {
-    class Program
+    public class Exercise8
     {
-
-        public static void EmployeePay(double pay, int hours)
+        public static double EmployeePay(double pay, int hours)
         {
             var baseHour = 60;
             var basePay = 8.00;
@@ -15,24 +14,22 @@ namespace Exercise_8
 
             if (pay < basePay)
             {
-                Console.WriteLine("Please double check the base pay.");
+                throw new EmployeeException("Please double check the base pay.");
             }
-            else if (hours > baseHour)
+            if (hours > baseHour)
             {
-                Console.WriteLine("You can't work that much.");
+                throw new EmployeeException("You can't work that much.");
             }
-            else if (hours > normalHours)
+            if (hours > normalHours)
             {
                 int extraHours = hours - normalHours;
                 double extraPay = (pay * extraPayRate) * extraHours;
                 salary = extraPay + (pay * normalHours);
-                Console.WriteLine(salary);
+                return salary;
             }
-            else
-            {
-                salary = hours * pay;
-                Console.WriteLine(salary);
-            }
+
+            salary = hours * pay;
+            return salary;
         }
         private static void Main()
         {
