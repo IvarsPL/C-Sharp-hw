@@ -30,13 +30,15 @@ namespace Hierarchy
             {
                 _foodEaten = food.Quantity;
             }
-            else { Console.WriteLine($"{_animalType} are not eating that type of food"); }
+            else
+            {
+                Console.WriteLine($"{_animalType} are not eating that type of food"); 
+            }
         }
 
         public override void ShowInfo()
         {
             Console.WriteLine($"{_animalType} [{_animalName}, {_animalWeight}, {_livingRegion}, {_foodEaten}] ");
         }
-
     }
 }

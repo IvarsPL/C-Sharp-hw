@@ -89,7 +89,6 @@ namespace Hierarchy
                     if (foodName == "Meat") newZebra.EatFood(newMeat);
                     else if (foodName == "Vegetable") newZebra.EatFood(newVegetable);
                     newZebra.ShowInfo();
-
                 }
 
             } while (Console.ReadLine() != "End");
@@ -99,15 +98,7 @@ namespace Hierarchy
                 v.ShowInfo();
             }
 
-
-
-
-
-
-
-
             Console.Read();
-
         }
     }
 }

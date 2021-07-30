@@ -26,7 +26,6 @@ namespace Firm
         //-----------------------------------------------------------------
         public override double Pay()
         {
-
             var payment = payRate * _hoursWorked;
             _hoursWorked = 0;
             return payment;
