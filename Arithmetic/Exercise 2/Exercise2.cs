@@ -6,7 +6,7 @@ namespace Exercise_2
     {
         public static string OddOrEven(int input)
         {
-           return input % 2 == 0 ? "Even" : "Odd";
+            return input % 2 == 0 ? "Even" : "Odd";
         }
         static void Main(string[] args)
         {

@@ -1,5 +1,4 @@
 using NUnit.Framework;
-using Exercise_2;
 
 namespace Exercise_2.Test
 {
@@ -11,9 +10,9 @@ namespace Exercise_2.Test
             //Arrange
             var expected = "Even";
             //Act
-            var actual = Exercise2.OddOrEven( 12);
+            var actual = Exercise2.OddOrEven(12);
             //Assert
-            Assert.AreEqual(expected,actual);
+            Assert.AreEqual(expected, actual);
         }
 
         [Test]
