@@ -13,7 +13,7 @@ namespace Exercise_8
             double extraPayRate = 1.5;
             double salary;
 
-            if (pay < basePay) 
+            if (pay < basePay)
             {
                 Console.WriteLine("Please double check the base pay.");
             }

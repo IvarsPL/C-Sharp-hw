@@ -2,8 +2,22 @@
 
 namespace Exercise_1
 {
-    class Program
+    public class Exercise1
     {
+
+        public static bool CheckDigitsForFifteen(int one, int two)
+        {
+            if (
+                one + two == 15 ||
+                one - two == 15 ||
+                two - one == 15 ||
+                one == 15 ||
+                two == 15)
+                return true;
+
+            return false;
+        }
+
         static void Main(string[] args)
         {
             Console.WriteLine("Please enter first digit:");
@@ -11,14 +25,7 @@ namespace Exercise_1
             Console.WriteLine("Please enter second digit:");
             var secondDigit = int.Parse(Console.ReadLine() ?? throw new InvalidOperationException());
 
-            if (
-                firstDigit + secondDigit == 15 ||
-                firstDigit - secondDigit == 15 || 
-                secondDigit - firstDigit == 15 || 
-                firstDigit == 15 || 
-                secondDigit == 15 
-                ) Console.WriteLine("True");
-            else Console.WriteLine("False");
+            Console.WriteLine(CheckDigitsForFifteen(firstDigit, secondDigit));
         }
     }
 }

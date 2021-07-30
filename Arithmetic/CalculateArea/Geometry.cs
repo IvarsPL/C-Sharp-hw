@@ -16,7 +16,7 @@ namespace CalculateArea
             if (length < 0 || width < 0) throw new ArgumentOutOfRangeException();
             double area = (double)(length * width);
             return area;
-            
+
         }
 
         public static double areaOfTriangle(decimal ground, decimal h)

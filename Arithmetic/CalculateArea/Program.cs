@@ -53,7 +53,7 @@ namespace CalculateArea
             Console.WriteLine("Enter your choice (1-4) : ");
             userChoice = int.Parse(Console.ReadLine());
 
-           
+
 
             if (userChoice < 1 || userChoice > 4)
             {
@@ -68,7 +68,7 @@ namespace CalculateArea
         {
             Console.WriteLine("What is the circle's radius? ");
             var keyboard = Console.ReadLine();
-           
+
             try
             {
                 decimal.TryParse(keyboard, out var radius);
