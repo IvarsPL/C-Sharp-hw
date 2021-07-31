@@ -33,9 +33,17 @@ namespace Exercise_8
         }
         private static void Main()
         {
-            EmployeePay(7.50, 35);
-            EmployeePay(8.20, 47);
-            EmployeePay(10.00, 73);
+            try
+            {
+                Console.WriteLine(EmployeePay(7.50, 35));
+                Console.WriteLine(EmployeePay(8.20, 47));
+                Console.WriteLine(EmployeePay(10.00, 73));
+            }
+            catch (EmployeeException e)
+            {
+                Console.WriteLine(e);
+            }
+
 
             Console.ReadKey();
 

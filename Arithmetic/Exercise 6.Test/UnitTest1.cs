@@ -20,7 +20,7 @@ namespace Exercise_6.Test
             var actual = Exercise6.CozaWozaLoza(numberToCheck);
 
             //Assert
-            Assert.AreEqual(equal,actual);
+            Assert.AreEqual(equal, actual);
         }
 
         [Test]
