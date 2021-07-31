@@ -2,27 +2,29 @@
 
 namespace CalculateArea
 {
-    public class Geometry
+    public static class Geometry
     {
-        public static double areaOfCircle(decimal radius)
+        public static decimal AreaOfCircle(decimal radius)
         {
             if (radius < 0) throw new ArgumentOutOfRangeException();
-            double area = Math.PI * ((double)radius * 2);
-            return area;
+            var area = (decimal)Math.PI * radius * radius;
+            return Math.Round(area, 2);
         }
 
-        public static double areaOfRectangle(decimal length, decimal width)
+        public static decimal AreaOfRectangle(decimal length, decimal width)
         {
             if (length < 0 || width < 0) throw new ArgumentOutOfRangeException();
-            double area = (double)(length * width);
+            var area = (length * width);
+            area = Decimal.Round(area, 2);
             return area;
 
         }
 
-        public static double areaOfTriangle(decimal ground, decimal h)
+        public static decimal AreaOfTriangle(decimal ground, decimal h)
         {
             if (ground < 0 || h < 0) throw new ArgumentOutOfRangeException();
-            double area = (double)0.5 * (double)ground * (double)h;
+            var area = (decimal)0.5 * ground * h;
+            area = Decimal.Round(area, 2);
             return area;
         }
     }

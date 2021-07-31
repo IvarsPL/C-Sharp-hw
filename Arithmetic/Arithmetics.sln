@@ -25,15 +25,17 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Exercise 8", "Exercise 8\Ex
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Exercise 9", "Exercise 9\Exercise 9.csproj", "{191EEB99-F805-4EF9-8706-2BA2513E2A51}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exercise 1.Test", "Exercise 1.Test\Exercise 1.Test.csproj", "{108FD6BF-E493-4CF6-9776-144FA2F29302}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Exercise 1.Test", "Exercise 1.Test\Exercise 1.Test.csproj", "{108FD6BF-E493-4CF6-9776-144FA2F29302}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exercise 2.Test", "Exercise 2.Test\Exercise 2.Test.csproj", "{2C9D4FF4-6250-4C66-9360-E4607D910970}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Exercise 2.Test", "Exercise 2.Test\Exercise 2.Test.csproj", "{2C9D4FF4-6250-4C66-9360-E4607D910970}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exercise 6.Test", "Exercise 6.Test\Exercise 6.Test.csproj", "{097B8B46-3D76-49AD-B9DA-99107486C248}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Exercise 6.Test", "Exercise 6.Test\Exercise 6.Test.csproj", "{097B8B46-3D76-49AD-B9DA-99107486C248}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GravityCalculator.test", "GravityCalculator.test\GravityCalculator.test.csproj", "{84523540-CA6F-4995-B511-852977A59EFE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GravityCalculator.test", "GravityCalculator.test\GravityCalculator.test.csproj", "{84523540-CA6F-4995-B511-852977A59EFE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exercise 8.Test", "Exercise8.Test\Exercise 8.Test.csproj", "{7D97726D-C419-4835-BD36-427E884221F6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Exercise 8.Test", "Exercise8.Test\Exercise 8.Test.csproj", "{7D97726D-C419-4835-BD36-427E884221F6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalculateArea.Test", "CalculateArea.Test\CalculateArea.Test.csproj", "{6CD457C2-9450-4E41-B5D4-AB6C8353B31A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -105,6 +107,10 @@ Global
 		{7D97726D-C419-4835-BD36-427E884221F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7D97726D-C419-4835-BD36-427E884221F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7D97726D-C419-4835-BD36-427E884221F6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6CD457C2-9450-4E41-B5D4-AB6C8353B31A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6CD457C2-9450-4E41-B5D4-AB6C8353B31A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6CD457C2-9450-4E41-B5D4-AB6C8353B31A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6CD457C2-9450-4E41-B5D4-AB6C8353B31A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

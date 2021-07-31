@@ -2,7 +2,7 @@
 
 namespace CalculateArea
 {
-    class Program
+    public class CalculateArea
     {
         static void Main(string[] args)
         {
@@ -11,24 +11,24 @@ namespace CalculateArea
             do
             {
                 // Get the user's menu choice.
-                choice = getMenu();
+                choice = GetMenu();
 
                 if (choice == 1)
                 {
                     Console.WriteLine("You chose Area of a Circle");
-                    calculateCircleArea();
+                    CalculateCircleArea();
                     Console.ReadKey();
                 }
                 else if (choice == 2)
                 {
                     Console.WriteLine("You chose Area of a Rectangle");
-                    calculateRectangleArea();
+                    CalculateRectangleArea();
                     Console.ReadKey();
                 }
                 else if (choice == 3)
                 {
                     Console.WriteLine("You chose Area of a Triangle");
-                    calculateTriangleArea();
+                    CalculateTriangleArea();
                     Console.ReadKey();
                 }
                 else if (choice == 4)
@@ -40,7 +40,7 @@ namespace CalculateArea
             } while (choice != 4);
         }
 
-        public static int getMenu()
+        public static int GetMenu()
         {
 
             int userChoice;
@@ -64,7 +64,7 @@ namespace CalculateArea
             return userChoice;
         }
 
-        public static void calculateCircleArea()
+        public static void CalculateCircleArea()
         {
             Console.WriteLine("What is the circle's radius? ");
             var keyboard = Console.ReadLine();
@@ -74,7 +74,7 @@ namespace CalculateArea
                 decimal.TryParse(keyboard, out var radius);
 
                 Console.WriteLine("The circle's area is "
-                        + Geometry.areaOfCircle(radius));
+                        + Geometry.AreaOfCircle(radius));
             }
             catch (ArgumentOutOfRangeException e)
             {
@@ -83,7 +83,7 @@ namespace CalculateArea
             }
         }
 
-        public static void calculateRectangleArea()
+        public static void CalculateRectangleArea()
         {
             Console.WriteLine("Enter length? ");
             var keyboard = Console.ReadLine();
@@ -97,7 +97,7 @@ namespace CalculateArea
                 decimal.TryParse(keyboard, out var width);
 
                 Console.WriteLine("The rectangle's area is "
-                    + Geometry.areaOfTriangle(length, width));
+                    + Geometry.AreaOfTriangle(length, width));
             }
             catch (ArgumentOutOfRangeException e)
             {
@@ -105,7 +105,7 @@ namespace CalculateArea
             }
         }
 
-        public static void calculateTriangleArea()
+        public static void CalculateTriangleArea()
         {
             Console.WriteLine("Enter length of the triangle's base? ");
             var keyboard = Console.ReadLine();
@@ -120,7 +120,7 @@ namespace CalculateArea
                 decimal.TryParse(keyboard, out var height);
 
                 Console.WriteLine("The triangle's area is "
-                    + Geometry.areaOfTriangle(ground, height));
+                    + Geometry.AreaOfTriangle(ground, height));
             }
             catch (ArgumentOutOfRangeException e)
             {
