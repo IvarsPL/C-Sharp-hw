@@ -1,11 +1,9 @@
-using System.Collections.Generic;
-
 namespace PhoneBook
 {
     public class PhoneEntry
     {
-        private string name;
-        private string number;
+        public string name;
+        public string number;
 
         public PhoneEntry(string name, string number)
         {

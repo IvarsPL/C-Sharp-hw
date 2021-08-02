@@ -20,7 +20,7 @@ namespace ListExercise11
             randomList[randomList.Count - 1] = "Odin";
             randomList.Sort();
             randomList.Contains("Foobar");
-            
+
             foreach (var hero in randomList) { Console.WriteLine(hero); }
 
             Console.Read();

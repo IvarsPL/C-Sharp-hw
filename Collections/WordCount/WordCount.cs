@@ -11,7 +11,7 @@ namespace WordCount
             var charCount = 0;
             foreach (var c in text)
             {
-                if(Char.IsLetterOrDigit(c)) charCount++;
+                if (Char.IsLetterOrDigit(c)) charCount++;
             }
 
             return charCount;

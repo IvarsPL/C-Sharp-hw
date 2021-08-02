@@ -5,7 +5,7 @@ namespace PhoneBook
 {
     public class PhoneDirectory
     {
-        private SortedDictionary<string,string> _phoneDictionary;
+        public SortedDictionary<string, string> _phoneDictionary;
         public PhoneDirectory()
         {
             _phoneDictionary = new SortedDictionary<string, string>();
@@ -14,7 +14,7 @@ namespace PhoneBook
         public string GetNumber(string name)
         {
             return _phoneDictionary[name];
-          
+
         }
 
         public void PutNumber(string name, string number)
@@ -23,7 +23,7 @@ namespace PhoneBook
             {
                 throw new Exception("name and number cannot be null");
             }
-            _phoneDictionary.Add(name,number);
+            _phoneDictionary.Add(name, number);
         }
     }
 }

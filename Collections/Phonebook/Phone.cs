@@ -1,9 +1,9 @@
-﻿using System;
-using PhoneBook;
+﻿using PhoneBook;
+using System;
 
 namespace Phonebook
 {
-    class Program
+    class Phone
     {
         static void Main(string[] args)
         {

@@ -45,7 +45,7 @@ namespace FlightPlanner
                 if (chosenCity == city.Key) Console.WriteLine(city.Value);
             }
         }
-        
+
         private static void Main(string[] args)
         {
             var chosenCity = "";
@@ -60,7 +60,7 @@ namespace FlightPlanner
                 while (inputLine == "1")
                 {
                     foreach (var s in Origins) { Console.WriteLine(s); }
-                    
+
                     Console.Write("Please enter the name of chosen city: ");
                     chosenCity = Console.ReadLine();
                     FlightPath.Add(chosenCity);

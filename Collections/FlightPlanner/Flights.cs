@@ -1,9 +1,5 @@
 ﻿using System;
-using System.Collections;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace FlightPlanner
 {
@@ -18,7 +14,7 @@ namespace FlightPlanner
 
         public static void AddFlights(string departure, string arrival)
         {
-            FlightList.Add(new KeyValuePair<string, string>(departure,arrival));
+            FlightList.Add(new KeyValuePair<string, string>(departure, arrival));
         }
 
         public static void PrintFlights()
