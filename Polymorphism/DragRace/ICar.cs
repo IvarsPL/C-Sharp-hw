@@ -6,6 +6,6 @@
         public void SpeedUp();
         public void SlowDown();
         public string ShowCurrentSpeed();
-        public void StartEngine();
+        public string StartEngine();
     }
 }

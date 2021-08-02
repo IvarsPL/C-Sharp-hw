@@ -1,5 +1,3 @@
-using System;
-
 namespace DragRace
 {
     public class Bmw : ICar
@@ -26,9 +24,9 @@ namespace DragRace
             return currentSpeed.ToString();
         }
 
-        public void StartEngine()
+        public string StartEngine()
         {
-            Console.WriteLine("Rrrrrrr.....");
+            return "Rrrrrrr.....";
         }
     }
 }

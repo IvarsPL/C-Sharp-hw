@@ -10,7 +10,7 @@ namespace Hierarchy
         private int _foodEaten;
         private readonly string _livingRegion;
 
-        public Mouse(string animalType, string animalName, double animalWeight, string livingRegion) : base( animalType, animalName, animalWeight, livingRegion)
+        public Mouse(string animalType, string animalName, double animalWeight, string livingRegion) : base(animalType, animalName, animalWeight, livingRegion)
         {
             _animalName = animalName;
             _animalType = animalType;

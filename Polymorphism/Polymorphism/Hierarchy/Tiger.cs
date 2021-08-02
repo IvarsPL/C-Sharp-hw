@@ -10,7 +10,7 @@ namespace Hierarchy
         private int _foodEaten;
         private readonly string _livingRegion;
 
-        public Tiger( string animalType, string animalName, double animalWeight, string livingRegion) : base(animalType, animalName,  animalWeight, livingRegion)
+        public Tiger(string animalType, string animalName, double animalWeight, string livingRegion) : base(animalType, animalName, animalWeight, livingRegion)
         {
             _animalName = animalName;
             _animalType = animalType;
@@ -32,7 +32,7 @@ namespace Hierarchy
             }
             else
             {
-                Console.WriteLine($"{_animalType} are not eating that type of food"); 
+                Console.WriteLine($"{_animalType} are not eating that type of food");
             }
         }
 

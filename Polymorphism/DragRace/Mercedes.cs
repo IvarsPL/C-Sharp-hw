@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace DragRace
+﻿namespace DragRace
 {
     class Mercedes : ICar, INitrousCar
     {
@@ -32,9 +30,9 @@ namespace DragRace
             currentSpeed += 5;
         }
 
-        public void StartEngine()
+        public string StartEngine()
         {
-            Console.WriteLine("Rrrrr");
+            return "Rrrrr";
         }
     }
 }

@@ -11,7 +11,7 @@ namespace Hierarchy
         private int _foodEaten;
         private readonly string _livingRegion;
 
-        public Cat(string animalType, string animalName, double animalWeight, string livingRegion, string breed) : base(animalType,  animalName,  animalWeight, livingRegion)
+        public Cat(string animalType, string animalName, double animalWeight, string livingRegion, string breed) : base(animalType, animalName, animalWeight, livingRegion)
         {
             _animalName = animalName;
             _animalType = animalType;

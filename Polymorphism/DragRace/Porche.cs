@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace DragRace
+﻿namespace DragRace
 {
     class Porche : ICar
     {
@@ -25,9 +23,9 @@ namespace DragRace
             return currentSpeed.ToString();
         }
 
-        public void StartEngine()
+        public string StartEngine()
         {
-            Console.WriteLine("-- silence ---");
+            return "-- silence ---";
         }
     }
 }
