@@ -15,9 +15,9 @@ namespace Exercise1
             this.Amount = amount;
         }
 
-        public void PrintProduct()
+        public string  PrintProduct()
         {
-            Console.WriteLine($"{this.Name}, price {this.PriceAtStart:0.00} EUR, amount {this.Amount}");
+            return $"{this.Name}, price {this.PriceAtStart:0.00} EUR, amount {this.Amount}";
         }
 
         public void PriceChange(double newPrice)

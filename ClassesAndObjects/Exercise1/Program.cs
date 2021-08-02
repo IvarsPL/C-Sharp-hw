@@ -13,13 +13,17 @@ namespace Exercise1
             Product phone = new Product("Iphone 5s", 999.99, 3);
             phone.PrintProduct();
             Product projector = new Product("Epson EB-U05", 440.46, 1);
-            projector.PrintProduct();
+            var print = projector.PrintProduct();
+            Console.WriteLine(print);
 
             projector.PriceChange(500.654);
             mouse.AmountChange(10);
 
-            mouse.PrintProduct();
-            projector.PrintProduct();
+            print = mouse.PrintProduct();
+            Console.WriteLine(print);
+            
+            print = projector.PrintProduct();
+            Console.WriteLine(print);
 
 
             Console.Read();
