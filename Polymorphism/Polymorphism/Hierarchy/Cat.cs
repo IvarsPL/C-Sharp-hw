@@ -4,17 +4,17 @@ namespace Hierarchy
 {
     public class Cat : Felime
     {
-        private string _breed;
-        private readonly string _animalName;
-        private readonly string _animalType;
-        private readonly double _animalWeight;
-        private int _foodEaten;
-        private readonly string _livingRegion;
+        public string _breed;
+        public readonly string _animalName;
+        public readonly string _animalType;
+        public readonly double _animalWeight;
+        public int _foodEaten;
+        public readonly string _livingRegion;
 
         public Cat(string animalType, string animalName, double animalWeight, string livingRegion, string breed) : base(animalType, animalName, animalWeight, livingRegion)
         {
-            _animalName = animalName;
             _animalType = animalType;
+            _animalName = animalName;
             _animalWeight = animalWeight;
             _foodEaten = 0;
             _livingRegion = livingRegion;
