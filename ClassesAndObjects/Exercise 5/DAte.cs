@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Exercise_5
 {
-    class Date
+   public class Date
     {
         private int _month;
         public int Month
@@ -46,9 +46,9 @@ namespace Exercise_5
             this.Day = day;
         }
 
-        public void DisplayDate()
+        public string DisplayDate()
         {
-            Console.WriteLine($"{_month :00}/{_day :00}/{_year :0000}");
+            return $"{_month :00}/{_day :00}/{_year :0000}";
         }
     }
 }

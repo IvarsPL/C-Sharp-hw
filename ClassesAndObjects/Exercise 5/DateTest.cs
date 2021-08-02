@@ -7,13 +7,18 @@ namespace Exercise_5
         static void Main(string[] args)
         {
             Date today = new Date(23, 2021, 7);
-            today.DisplayDate();
+            var print = today.DisplayDate();
+            Console.WriteLine(print);
+
             Date randomDay = new Date(123, 20123, 14);
-            randomDay.DisplayDate();
+            print = randomDay.DisplayDate();
+            Console.WriteLine(print);
+
             randomDay.Day = 30;
             randomDay.Month = 11;
             randomDay.Year = 0009;
-            randomDay.DisplayDate();
+            print = randomDay.DisplayDate();
+            Console.WriteLine(print);
 
             Console.Read();
         }
