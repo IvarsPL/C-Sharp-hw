@@ -1,7 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Diagnostics;
-using System.Threading;
 
 namespace IfScooters
 {
@@ -11,6 +8,7 @@ namespace IfScooters
         public decimal PricePerMinute { get; set; }
         public bool IsRented { get; set; }
         public decimal Turnover { get; set; }
+        public TimeSpan StartingTime { get; set; }
 
         public Scooter(string id, decimal pricePerMinute)
         {

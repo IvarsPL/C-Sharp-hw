@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using System.Threading;
+﻿using System.Collections.Generic;
 
 namespace IfScooters
 {
@@ -9,12 +6,14 @@ namespace IfScooters
     {
         public string Id { get; set; }
         public decimal PricePerMinute { get; set; }
-        public List<Scooter> ScootersList = new();
+        public List<Scooter> ScootersList { get; set; }
 
         public ScooterService()
         {
-            new List<Scooter>();
+            ScootersList = new List<Scooter>();
         }
+
+
 
         public void AddScooter(string id, decimal pricePerMinute)
         {
@@ -23,9 +22,9 @@ namespace IfScooters
 
         public void RemoveScooter(string id)
         {
-            for (var i = 0; i<ScootersList.Count; i++)
+            for (var i = 0; i < ScootersList.Count; i++)
             {
-                if (ScootersList[i].Id == id) ScootersList.Remove(ScootersList[i]);
+                if (ScootersList[i].Id == id && ScootersList[i].IsRented == false) ScootersList.Remove(ScootersList[i]);
             }
         }
 
@@ -40,7 +39,7 @@ namespace IfScooters
             {
                 if (ScootersList[i].Id == scooterId) return ScootersList[i];
             }
-            
+
             throw new MyException(message: "Scooter not found");
         }
     }

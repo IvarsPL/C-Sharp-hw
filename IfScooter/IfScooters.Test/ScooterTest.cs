@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using NUnit.Framework;
+﻿using NUnit.Framework;
 
 namespace IfScooters.Test
 {
@@ -15,9 +12,7 @@ namespace IfScooters.Test
             var expectedTurnover = 100;
 
             //Act
-            var myScootie = new Scooter("123", 12);
-            myScootie.IsRented = true;
-            myScootie.Turnover = 100;
+            var myScootie = new Scooter("123", 12) {IsRented = true, Turnover = 100};
 
             //Assert
             Assert.AreEqual(expected, myScootie.IsRented);

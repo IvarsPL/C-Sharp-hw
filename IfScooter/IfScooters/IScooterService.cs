@@ -12,7 +12,7 @@ namespace IfScooters
 
         void RemoveScooter(string id);
 
-        IList<Scooter> GetScooters(); 
+        IList<Scooter> GetScooters();
 
         Scooter GetScooterById(string scooterId);
 

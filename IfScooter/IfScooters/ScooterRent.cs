@@ -1,49 +1,66 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Diagnostics;
-using System.Text;
-using System.Threading;
 
 namespace IfScooters
 {
     public class ScooterRent : IRentalCompany
     {
-        public string Name { get; }
-        public Stopwatch Stopwatch = new();
-        private ScooterService Scooty = new ScooterService(); // neesmu drošs par šo pieeju. Itkā jau viņš tiek izmantots, tikai lai izsauktu metodes, bet tāpat nekas nestrādā;
-        
-        public ScooterRent()
-        {
+        public static void Main() { }
+        public string Name { get; set; }
+        private readonly IScooterService _scooty;
 
+        public ScooterRent(IScooterService scooty)
+        {
+            _scooty = scooty;
         }
         public void StartRent(string id)
         {
-            Scooty.GetScooterById(id).IsRented = true;
+            _scooty.GetScooterById(id).IsRented = true;
+            _scooty.GetScooterById(id).StartingTime = DateTime.Now.TimeOfDay;
 
-            Stopwatch.Start();
-            Thread.Sleep(10000);
         }
-        
-        public decimal EndRent(string id) // šeit vēl neesmu ticis klāt - labošu pēc tam formulas.
+
+        public decimal EndRent(string id) // if total amount > 20 eur , stop time until next day 0:00am;
         {
-            Scooty.GetScooterById(id).IsRented = false;
-            Stopwatch.Stop();
-            TimeSpan ts = Stopwatch.Elapsed;
-            var price = Scooty.GetScooterById(id).PricePerMinute * ts.Minutes;
-            Scooty.GetScooterById(id).Turnover += price;
+            _scooty.GetScooterById(id).IsRented = false;
+            TimeSpan endTime = DateTime.Now.TimeOfDay;
+            TimeSpan timeDiff = endTime - _scooty.GetScooterById(id).StartingTime;
+            int minutes = Convert.ToInt32(timeDiff.TotalMinutes);
+            minutes = (int)Math.Ceiling((double)minutes);
+            if (minutes < 1) minutes = 1;
+
+            decimal price = _scooty.GetScooterById(id).PricePerMinute * minutes;
+            
+            _scooty.GetScooterById(id).Turnover += price;
             return price;
         }
 
         public decimal CalculateIncome(int? year, bool includeNotCompletedRentals)
         {
+            if (includeNotCompletedRentals)
+            {
+                foreach (var scooter in _scooty.GetScooters())
+                {
+                    if (scooter.IsRented)
+                    {
+                        TimeSpan endTime = DateTime.Now.TimeOfDay;
+                        TimeSpan timeDiff = endTime - scooter.StartingTime;
+                        int minutes = Convert.ToInt32(timeDiff.TotalMinutes);
+                        minutes = (int)Math.Ceiling((double)minutes);
+                        if (minutes < 1) minutes = 1;
+
+                        decimal price = scooter.PricePerMinute * minutes;
+
+                        scooter.Turnover += price;
+                    }
+                }
+            }
+            
             decimal income = 0;
-            foreach (var scooter in Scooty.ScootersList)
+            foreach (var scooter in _scooty.GetScooters())
             {
                 income += scooter.Turnover;
             }
             return income;
         }
-        public static void Main()
-        {}
     }
 }

@@ -1,6 +1,3 @@
-using System;
-using System.Collections.Generic;
-using Microsoft.VisualBasic;
 using NUnit.Framework;
 
 namespace IfScooters.Test
@@ -17,7 +14,7 @@ namespace IfScooters.Test
             //Act
             myList.AddScooter("145", 2);
             var scooter = myList.GetScooterById("145");
-            
+
             //Assert
             Assert.AreEqual(equals.Id, scooter.Id);
             Assert.AreEqual(equals.PricePerMinute, scooter.PricePerMinute);
@@ -34,7 +31,7 @@ namespace IfScooters.Test
             myList.AddScooter("1523", 2);
             myList.AddScooter("1583", 2);
             myList.RemoveScooter("145");
-            
+
             //Assert
             Assert.Throws<MyException>(() => myList.GetScooterById("145"));
         }
@@ -43,10 +40,8 @@ namespace IfScooters.Test
         public void ScooterServiceProperties_Initialize_ReturnsTrue()
         {
             //Arrange
-            var myList = new ScooterService();
+            var myList = new ScooterService {Id = "123", PricePerMinute = 23};
             //Act
-            myList.Id = "123";
-            myList.PricePerMinute = 23;
             //Assert
             Assert.AreEqual("123", myList.Id);
             Assert.AreEqual(23, myList.PricePerMinute);
