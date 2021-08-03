@@ -9,29 +9,35 @@ namespace IfScooters
     public class ScooterRent : IRentalCompany
     {
         public string Name { get; }
-        
         public Stopwatch Stopwatch = new();
+        private ScooterService Scooty = new ScooterService(); // neesmu drošs par šo pieeju. Itkā jau viņš tiek izmantots, tikai lai izsauktu metodes, bet tāpat nekas nestrādā;
+        
+        public ScooterRent()
+        {
+
+        }
         public void StartRent(string id)
         {
-            scooty.GetScooterById(id).IsRented = true;
+            Scooty.GetScooterById(id).IsRented = true;
+
             Stopwatch.Start();
             Thread.Sleep(10000);
         }
-        public ScooterService scooty = new();
-        public decimal EndRent(string id)
+        
+        public decimal EndRent(string id) // šeit vēl neesmu ticis klāt - labošu pēc tam formulas.
         {
-            scooty.GetScooterById(id).IsRented = false;
+            Scooty.GetScooterById(id).IsRented = false;
             Stopwatch.Stop();
             TimeSpan ts = Stopwatch.Elapsed;
-            var price = scooty.GetScooterById(id).PricePerMinute * ts.Minutes;
-            scooty.GetScooterById(id).Turnover += price;
+            var price = Scooty.GetScooterById(id).PricePerMinute * ts.Minutes;
+            Scooty.GetScooterById(id).Turnover += price;
             return price;
         }
 
         public decimal CalculateIncome(int? year, bool includeNotCompletedRentals)
         {
             decimal income = 0;
-            foreach (var scooter in scooty.ScootersList)
+            foreach (var scooter in Scooty.ScootersList)
             {
                 income += scooter.Turnover;
             }

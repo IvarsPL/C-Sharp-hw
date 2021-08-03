@@ -36,7 +36,7 @@ namespace IfScooters.Test
             myList.RemoveScooter("145");
             
             //Assert
-            Assert.Throws<Exception>(() => myList.GetScooterById("145"));
+            Assert.Throws<MyException>(() => myList.GetScooterById("145"));
         }
 
         [Test]

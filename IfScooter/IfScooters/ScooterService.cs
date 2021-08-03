@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Threading;
 
 namespace IfScooters
 {
@@ -35,11 +36,12 @@ namespace IfScooters
 
         public Scooter GetScooterById(string scooterId)
         {
-            foreach (var scooter in ScootersList)
+            for (var i = 0; i < ScootersList.Count; i++)
             {
-                if (scooter.Id == scooterId) return scooter;
+                if (ScootersList[i].Id == scooterId) return ScootersList[i];
             }
-            throw new Exception();
+            
+            throw new MyException(message: "Scooter not found");
         }
     }
 }
