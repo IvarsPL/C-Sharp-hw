@@ -40,7 +40,7 @@ namespace IfScooters.Test
         public void ScooterServiceProperties_Initialize_ReturnsTrue()
         {
             //Arrange
-            var myList = new ScooterService {Id = "123", PricePerMinute = 23};
+            var myList = new ScooterService { Id = "123", PricePerMinute = 23 };
             //Act
             //Assert
             Assert.AreEqual("123", myList.Id);

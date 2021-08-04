@@ -6,14 +6,15 @@ namespace IfScooters
     {
         public string Id { get; set; }
         public decimal PricePerMinute { get; set; }
+        public List<RideHistory> RideHistory { get; set; }
         public List<Scooter> ScootersList { get; set; }
+        public Scooter MyScooter { get; set; }
 
         public ScooterService()
         {
             ScootersList = new List<Scooter>();
+            RideHistory = new List<RideHistory>();
         }
-
-
 
         public void AddScooter(string id, decimal pricePerMinute)
         {

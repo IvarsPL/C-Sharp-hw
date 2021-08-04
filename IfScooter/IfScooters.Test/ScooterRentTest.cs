@@ -37,7 +37,6 @@ namespace IfScooters.Test
             Assert.IsFalse(q.IsRented);
 
         }
-
         [Test]
         public void EndRent_ScooterIsGivenBackToCalculateTurnover_ReturnsExpectedAmount()
         {
@@ -50,7 +49,7 @@ namespace IfScooters.Test
             s.StartRent("123");
 
             var actualTurnover = s.EndRent("123");
-            
+
             //Assert
             Assert.AreEqual(2, actualTurnover);
         }
@@ -110,10 +109,9 @@ namespace IfScooters.Test
         {
             //Arrange
             var p = new ScooterService();
-            var s = new ScooterRent(p);
+            var s = new ScooterRent(p) { Name = "Bolt" };
 
             //Act
-            s.Name = "Bolt";
 
             //Assert
             Assert.AreEqual("Bolt", s.Name);
