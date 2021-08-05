@@ -1,17 +1,16 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Windows.Markup;
 
 namespace IfScooters
 {
     public class RideHistory
     {
-
+        //Parameters
         private double _rideMinutes;
         private double _rideDays;
         public double Turnover { get; set; } = 0;
-        public double RideMinutes 
-        { get => Convert.ToInt32(Math.Round(_rideMinutes, 0));
+        public double RideMinutes
+        {
+            get => Convert.ToInt32(Math.Round(_rideMinutes, 0));
             set => _rideMinutes = value;
         }
         public double RideDays
@@ -22,21 +21,24 @@ namespace IfScooters
         public string Id { get; set; }
         public DateTime StartDateTime { get; set; }
         public DateTime EndDateTime { get; set; }
-
+        
+        //Constructor
         public RideHistory(string id)
         {
             Id = id;
-            StartDateTime = DateTime.Now;
-            
+            StartDateTime = DateTime.Now - TimeSpan.FromSeconds(DateTime.Now.Second);
+
         }
 
+        //Methods
         public void CalculateScooterRideTime()
         {
             var days = (EndDateTime - StartDateTime).TotalDays;
             var minutes = (EndDateTime - StartDateTime).TotalMinutes;
-            if (days < 0)
+            if (days < 1)
             {
                 RideMinutes = minutes;
+                RideDays = 0;
             }
             else
             {

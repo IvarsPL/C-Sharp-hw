@@ -4,15 +4,19 @@ namespace IfScooters
 {
     public class ScooterRent : IRentalCompany
     {
-        public static void Main() { }
+        public static void Main() { } //Bez šī man neļāva palaist neko
+
+        //Parameters
         public string Name { get; set; }
         private readonly ScooterService _scooty;
 
+        //Constructor
         public ScooterRent(ScooterService scooty)
         {
             _scooty = scooty;
         }
 
+        //Methods
         public void StartRent(string id)
         {
             _scooty.GetScooterById(id).IsRented = true;
@@ -52,13 +56,12 @@ namespace IfScooters
                     {
                         foreach (var ride in _scooty.RideHistory)
                         {
-                            if (ride.Id == scooter.Id)
+                            if (ride.Id == scooter.Id && ride.Turnover == 0)
                             {
                                 ride.EndDateTime = DateTime.Now;
+                                ride.CalculateScooterRideTime();
+                                ride.CalculateScooterTurnover(scooter);
                             }
-
-                            ride.CalculateScooterRideTime();
-                            ride.CalculateScooterTurnover(scooter);
                         }
                     }
                 }

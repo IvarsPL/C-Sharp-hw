@@ -1,4 +1,5 @@
 ﻿using NUnit.Framework;
+using System;
 
 namespace IfScooters.Test
 {
@@ -8,8 +9,8 @@ namespace IfScooters.Test
         public void StartRent_RentANewScooter_ReturnsTrue()
         {
             //Arrange
-            var p = new ScooterService();
-            var s = new ScooterRent(p);
+            var p = new ScooterService(); // nevar caur interface, jo tur nav paredzēts konstruktors ar ScooterService argumentu
+            IRentalCompany s = new ScooterRent(p);
 
             //Act
             p.AddScooter("123", 2);
@@ -25,7 +26,7 @@ namespace IfScooters.Test
         {
             //Arrange
             var p = new ScooterService();
-            var s = new ScooterRent(p);
+            IRentalCompany s = new ScooterRent(p);
 
             //Act
             p.AddScooter("123", 2);
@@ -42,16 +43,20 @@ namespace IfScooters.Test
         {
             //Arrange
             var p = new ScooterService();
-            var s = new ScooterRent(p);
+            IRentalCompany s = new ScooterRent(p);
+            var timeDiff = 15;
+            var pricePerMinute = 0.2m;
+            var expected = pricePerMinute * timeDiff;
 
             //Act
-            p.AddScooter("123", 2);
+            p.AddScooter("123", pricePerMinute);
             s.StartRent("123");
+            var q = p.GetHistoryById("123").StartDateTime = DateTime.Now - TimeSpan.FromMinutes(timeDiff);
 
             var actualTurnover = s.EndRent("123");
 
             //Assert
-            Assert.AreEqual(2, actualTurnover);
+            Assert.AreEqual(expected, actualTurnover);
         }
 
         [Test]
@@ -59,24 +64,32 @@ namespace IfScooters.Test
         {
             //Arrange
             var p = new ScooterService();
-            var s = new ScooterRent(p);
+            IRentalCompany s = new ScooterRent(p);
+            var timeDiff = 15;
+            var pricePerMinute = 0.2m;
+            var expected = 5*(pricePerMinute * timeDiff);
 
             //Act
-            p.AddScooter("123", 2);
+            p.AddScooter("123", pricePerMinute);
             s.StartRent("123");
-            p.AddScooter("134", 2);
+            p.GetHistoryById("123").StartDateTime = DateTime.Now - TimeSpan.FromMinutes(timeDiff);
+            p.AddScooter("134", pricePerMinute);
             s.StartRent("134");
-            p.AddScooter("156", 2);
+            p.GetHistoryById("134").StartDateTime = DateTime.Now - TimeSpan.FromMinutes(timeDiff);
+            p.AddScooter("156", pricePerMinute);
             s.StartRent("156");
-            p.AddScooter("181", 2);
+            p.GetHistoryById("156").StartDateTime = DateTime.Now - TimeSpan.FromMinutes(timeDiff);
+            p.AddScooter("181", pricePerMinute);
             s.StartRent("181");
-            p.AddScooter("222", 2);
+            p.GetHistoryById("181").StartDateTime = DateTime.Now - TimeSpan.FromMinutes(timeDiff);
+            p.AddScooter("222", pricePerMinute);
             s.StartRent("222");
+            p.GetHistoryById("222").StartDateTime = DateTime.Now - TimeSpan.FromMinutes(timeDiff);
 
             var actualTurnover = s.CalculateIncome(1, true);
 
             //Assert
-            Assert.AreEqual(10, actualTurnover);
+            Assert.AreEqual(expected, actualTurnover);
         }
 
         [Test]
@@ -84,7 +97,7 @@ namespace IfScooters.Test
         {
             //Arrange
             var p = new ScooterService();
-            var s = new ScooterRent(p);
+            IRentalCompany s = new ScooterRent(p);
 
             //Act
             p.AddScooter("123", 2);
@@ -109,7 +122,7 @@ namespace IfScooters.Test
         {
             //Arrange
             var p = new ScooterService();
-            var s = new ScooterRent(p) { Name = "Bolt" };
+            IRentalCompany s = new ScooterRent(p) { Name = "Bolt" };
 
             //Act
 

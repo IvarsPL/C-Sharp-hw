@@ -4,18 +4,18 @@ namespace IfScooters
 {
     public class ScooterService : IScooterService
     {
+        //Parameters
         public string Id { get; set; }
         public decimal PricePerMinute { get; set; }
         public List<RideHistory> RideHistory { get; set; }
         public List<Scooter> ScootersList { get; set; }
-        public Scooter MyScooter { get; set; }
-
+        //Constructors
         public ScooterService()
         {
             ScootersList = new List<Scooter>();
             RideHistory = new List<RideHistory>();
         }
-
+        //Methods
         public void AddScooter(string id, decimal pricePerMinute)
         {
             ScootersList.Add(new Scooter(id, pricePerMinute));
@@ -42,6 +42,16 @@ namespace IfScooters
             }
 
             throw new MyException(message: "Scooter not found");
+        }
+
+        public RideHistory GetHistoryById(string id)
+        {
+            foreach (var ride in RideHistory)
+            {
+                if (ride.Id == id) return ride;
+            }
+
+            throw new MyException(message: "There is no history for this scooter");
         }
     }
 }
