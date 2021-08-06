@@ -5,7 +5,7 @@ namespace DragRace.Test
     public class Tests
     {
         [Test]
-        public void TeslaConstructor_CreateNewInstance_ReturnsTrue()
+        public void TeslaConstructor_CreateNewInstance_ReturnsNewTeslaInstance()
         {
             //Arrange
             var expected = "0";
@@ -15,7 +15,7 @@ namespace DragRace.Test
             Assert.AreEqual(expected, actual.ShowCurrentSpeed());
         }
         [Test]
-        public void SpeedUp_CallFourTimes_ReturnsTrue()
+        public void SpeedUp_CallFourTimes_ReturnsIncreasedSpeedProperty()
         {
             var actual = new Tesla();
             var expected = "4";
@@ -29,7 +29,7 @@ namespace DragRace.Test
         }
 
         [Test]
-        public void SlowDown_CallOnce_ReturnsTrue()
+        public void SlowDown_CallOnce_ReturnsDecreasedSpeedProperty()
         {
             var actual = new Tesla();
             var expected = "2";
@@ -43,7 +43,7 @@ namespace DragRace.Test
         }
 
         [Test]
-        public void StartEngine_CallOnce_ReturnsTrue()
+        public void StartEngine_CallOnce_ReturnsExpectedSoundAsString()
         {
             var actual = new Tesla();
             var expected = "-- silence ---";
@@ -54,7 +54,7 @@ namespace DragRace.Test
         }
 
         [Test]
-        public void UseNitrousOxideEngine_ImplementsInterface_ReturnsTrue()
+        public void UseNitrousOxideEngine_IfCarImplementsINitrousCarInterface_ReturnsExpectedBoostInSpeed()
         {
             //Arrange
             var actual = new Lexus();

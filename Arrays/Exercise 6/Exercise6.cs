@@ -12,11 +12,11 @@ namespace Exercise_6
         public static int[] MakeRandomArray()
         {
         Random RandNum = new Random();
-       var first = Enumerable
+        var first = Enumerable
             .Repeat(0, 10)
             .Select(i => RandNum.Next(1, 100))
             .ToArray();
-       return first;
+        return first;
         }
 
         public static int[] MakeSecondArray(int[] first, int[] second)

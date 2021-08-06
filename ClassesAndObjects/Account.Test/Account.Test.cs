@@ -6,7 +6,7 @@ namespace Account.Test
     {
 
         [Test]
-        public void AccountConstructor_NewAccount_ReturnsTrue()
+        public void AccountConstructor_NewAccount_ReturnsExpectedAccount()
         {
             //Arrange
             var expectedBalance = 1000000;
@@ -21,7 +21,7 @@ namespace Account.Test
         }
 
         [Test]
-        public void NameProperty_ChangeName_ReturnsTrue()
+        public void NameProperty_ChangeName_ReturnsChangedName()
         {
             //Arrange
             var expectedName = "Igors";
@@ -35,7 +35,7 @@ namespace Account.Test
         }
 
         [Test]
-        public void Withdraw_HalfOfBalance_ReturnsTrue()
+        public void Withdraw_HalfOfBalance_ReturnsExpectedBalance()
         {
             //Arrange
             var expectedBalance = 500;
@@ -49,7 +49,7 @@ namespace Account.Test
         }
 
         [Test]
-        public void Deposit_DoubleUpBalance_ReturnsTrue()
+        public void Deposit_DoubleUpBalance_ReturnsExpectedBalance()
         {
             //Arrange
             var expectedBalance = 1000;
@@ -63,7 +63,7 @@ namespace Account.Test
         }
 
         [Test]
-        public void ToString_NameAndBalance_ReturnsTrue()
+        public void ToString_NameAndBalance_ReturnsBalanceAndNameToString()
         {
             //Arrange
             var expected = $"Ivars: 1000";

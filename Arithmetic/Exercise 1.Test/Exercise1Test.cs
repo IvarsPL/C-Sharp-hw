@@ -2,11 +2,11 @@ using NUnit.Framework;
 
 namespace Exercise_1.Test
 {
-    public class Tests
+    public class Exercise1Test
     {
 
         [Test]
-        public void CheckDigitsForFifteen_SumEqualsFifteen_ShouldReturnTrue()
+        public void CheckDigitsForFifteen_SumEqualsFifteen_ReturnsTrue()
         {
             //Arrange
             var caseOne = 7;

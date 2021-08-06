@@ -7,7 +7,7 @@ namespace Hierarchy.Test
     public class Tests
     {
         [Test]
-        public void CatConstructor_CreateNewInstance_ReturnsTrue()
+        public void CatConstructor_CreateNewInstance_ReturnsNewCatInstance()
         {
             //Arrange
             var type = "Cat";
@@ -27,7 +27,7 @@ namespace Hierarchy.Test
         }
 
         [Test]
-        public void EatFood_AddFoodTwoTimes_ReturnTrue()
+        public void EatFood_AddFoodTwoTimes_ReturnsIncreaseInFoodEaten()
         {
             //Arrange
             var equals = 5;

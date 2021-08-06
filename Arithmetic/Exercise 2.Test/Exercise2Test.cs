@@ -2,7 +2,7 @@ using NUnit.Framework;
 
 namespace Exercise_2.Test
 {
-    public class Tests
+    public class Exercise2Test
     {
         [Test]
         public void OddOrEven_EvenNumber_ShouldReturnTrue()

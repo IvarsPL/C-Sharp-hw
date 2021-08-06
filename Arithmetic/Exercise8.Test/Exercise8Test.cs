@@ -5,7 +5,7 @@ namespace Exercise_8.Test
     public class Exercise8Test
     {
         [Test]
-        public void EmployeePay_LessThanBasePay_ReturnsTrue()
+        public void EmployeePay_LessThanBasePay_ThrowsPayException()
         {
             //Arrange
             var pay = 7;
@@ -16,7 +16,7 @@ namespace Exercise_8.Test
         }
 
         [Test]
-        public void EmployeePay_TooManyHours_ReturnsTrue()
+        public void EmployeePay_TooManyHours_ReturnsThrowsHourException()
         {
             //Arrange
             var pay = 8.50;
@@ -27,7 +27,7 @@ namespace Exercise_8.Test
         }
 
         [Test]
-        public void EmployeePay_ExtraHours_ReturnsTrue()
+        public void EmployeePay_ExtraHours_ReturnsCorrectExtraHourPay()
         {
             //Arrange
             var pay = 8;
@@ -40,7 +40,7 @@ namespace Exercise_8.Test
         }
 
         [Test]
-        public void EmployeePay_NormalPay_ReturnsTrue()
+        public void EmployeePay_NormalPay_ReturnsCorrectPay()
         {
             //Arrange
             var pay = 8;

@@ -6,7 +6,7 @@ namespace Exercise5.Test
     public class Tests
     {
         [Test]
-        public void DateConstructor_RandomDay_ReturnsTrue()
+        public void DateConstructor_RandomDay_ReturnsExpectedNewDate()
         {
             //Arrange
             var expectedMonth = 12;
@@ -21,7 +21,7 @@ namespace Exercise5.Test
         }
 
         [Test]
-        public void DisplayDate_RandomDay_ReturnsTrue()
+        public void DisplayDate_RandomDay_ReturnsExpectedDateAsString()
         {
             //Arrange
             var expected = $"{12:00}/{21:00}/{2012:0000}";

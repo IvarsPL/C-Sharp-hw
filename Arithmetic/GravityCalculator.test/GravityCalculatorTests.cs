@@ -2,10 +2,10 @@ using NUnit.Framework;
 
 namespace GravityCalculator.test
 {
-    public class Tests
+    public class GravityCalculatorTests
     {
         [Test]
-        public void FinalPosition_Input_ReturnsTrue()
+        public void FinalPosition_Input_ReturnsExpectedCalculation()
         {
             //Arrange
             double gravity = -9.81;

@@ -5,7 +5,7 @@ namespace PhoneBook.Test
     public class Tests
     {
         [Test]
-        public void PhoneEntryTest_CreateNewInstance_ReturnsTrue()
+        public void PhoneEntryTest_CreateNewInstance_CreatesExpectedInstance()
         {
             //Arrange
             var expectedName = "Ivars";
@@ -18,7 +18,7 @@ namespace PhoneBook.Test
         }
 
         [Test]
-        public void PhoneDirectoryTest_CreateNewInstance_ReturnsTrue()
+        public void PhoneDirectoryTest_CreateNewInstance_ReturnsExpectedInstance()
         {
             //Arrange
             var expectedNumber = "26626878";

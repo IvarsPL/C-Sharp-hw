@@ -5,7 +5,7 @@ namespace WordCount.Test
     public class Tests
     {
         [Test]
-        public void CharCounter_CheckingNormalChars_ShouldReturnTrue()
+        public void CharCounter_CheckingNormalChars_ShouldReturnCorrectCharacterCount()
         {
             //Arrange
             var text =
@@ -18,7 +18,7 @@ namespace WordCount.Test
         }
 
         [Test]
-        public void WordCounter_CountingWords_ShouldReturnTrue()
+        public void WordCounter_CountingWords_ShouldReturnCorrectWordCount()
         {
             //Arrange
             var text =

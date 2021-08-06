@@ -6,7 +6,7 @@ namespace FlightPlanner.Test
     public class Tests
     {
         [Test]
-        public void AddFlights_DepartureAndArrival_ReturnsTrue()
+        public void AddFlights_DepartureAndArrival_ReturnsExpectedDepartureAndArrival()
         {
             //Arrange
             var expected = new List<KeyValuePair<string, string>>()

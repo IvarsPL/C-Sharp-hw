@@ -5,7 +5,7 @@ namespace Exercise1.Test
     public class Tests
     {
         [Test]
-        public void ProductConstructor_InputStandardProduct_ReturnsTrue()
+        public void ProductConstructor_InputStandardProduct_ReturnsExpectedInstance()
         {
             //Arrange
             var expectedName = "Potatoe";
@@ -20,7 +20,7 @@ namespace Exercise1.Test
         }
 
         [Test]
-        public void PrintProduct_ProductNameAndPrice_ReturnsTrue()
+        public void PrintProduct_ProductNameAndPrice_ReturnsExpectedProductNameAndPrice()
         {
             //Arrange
             var expectedName = "Potatoe";
@@ -35,7 +35,7 @@ namespace Exercise1.Test
         }
 
         [Test]
-        public void PriceChange_NewPrice_ReturnsTrue()
+        public void PriceChange_NewPrice_ReturnsChangedPrice()
         {
             //Arrange
             var expectedPrice = 4.44;
@@ -47,7 +47,7 @@ namespace Exercise1.Test
         }
 
         [Test]
-        public void AmountChange_NewAmount_ReturnsTrue()
+        public void AmountChange_NewAmount_ReturnsChangedAmount()
         {
             //Arrange
             var expectedAmount = 44;
